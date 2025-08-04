@@ -25,6 +25,8 @@ function Navbar() {
           <Link to="/" className="hover:text-green-400 transition duration-300">Home</Link>
           <Link to="/about" className="hover:text-green-400 transition duration-300">About Us</Link>
           <Link to="/volunteer" className="hover:text-green-400 transition duration-300">Volunteer</Link>
+          <Link to="/donate" className="hover:text-green-400 transition duration-300">Donate</Link>
+          <Link to="/contact" className="hover:text-green-400 transition duration-300">Contact Us</Link>
         </div>
       </div>
 
@@ -34,6 +36,8 @@ function Navbar() {
           <Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-green-400">Home</Link>
           <Link to="/about" onClick={() => setIsOpen(false)} className="block hover:text-green-400">About Us</Link>
           <Link to="/volunteer" onClick={() => setIsOpen(false)} className="block hover:text-green-400">Volunteer</Link>
+          <Link to="/donate" onClick={() => setIsOpen(false)} className="block hover:text-green-400">Donate</Link>
+          <Link to="/contact" onClick={() => setIsOpen(false)} className="block hover:text-green-400">Contact Us</Link>
         </div>
       )}
     </nav>

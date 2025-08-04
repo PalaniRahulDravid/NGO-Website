@@ -3,6 +3,9 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import VolunteerForm from "./pages/VolunteerForm";
+import Donate from "./pages/Donate";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/volunteer" element={<VolunteerForm />} />
+            <Route path="/donate" element={<Donate />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
       </div>

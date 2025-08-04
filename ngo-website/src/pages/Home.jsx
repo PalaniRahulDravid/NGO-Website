@@ -91,6 +91,15 @@ const Home = () => {
               <p className="mt-2 text-gray-300">Women Trained</p>
             </div>
           </div>
+          {/* Blog/News Link */}
+          <div className="mt-10">
+            <a
+              href="/blog"
+              className="inline-block bg-green-500 text-white font-semibold px-6 py-3 rounded-md shadow hover:bg-green-600 transition"
+            >
+              Read Our Blog & News
+            </a>
+          </div>
         </div>
       </section>
 
