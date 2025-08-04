@@ -51,19 +51,19 @@ const Home = () => {
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center text-green-500 mb-12">What We Do</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-950 p-6 rounded-lg shadow hover:shadow-md transition">
+            <div className="bg-gray-950 p-6 rounded-lg shadow hover:shadow-md hover:shadow-green-400/20 transition">
               <h3 className="text-xl font-semibold text-green-400 mb-2">🎓 Education</h3>
               <p className="text-gray-300">
                 We provide school kits, scholarships, and tuition classes to underprivileged children.
               </p>
             </div>
-            <div className="bg-gray-950 p-6 rounded-lg shadow hover:shadow-md transition">
+            <div className="bg-gray-950 p-6 rounded-lg shadow hover:shadow-md hover:shadow-green-400/20 transition">
               <h3 className="text-xl font-semibold text-green-400 mb-2">🏥 Healthcare</h3>
               <p className="text-gray-300">
                 Regular health checkups, blood donation camps, and health awareness programs.
               </p>
             </div>
-            <div className="bg-gray-950 p-6 rounded-lg shadow hover:shadow-md transition">
+            <div className="bg-gray-950 p-6 rounded-lg shadow hover:shadow-md hover:shadow-green-400/20 transition">
               <h3 className="text-xl font-semibold text-green-400 mb-2">👩‍🦰 Women Empowerment</h3>
               <p className="text-gray-300">
                 Skill training, self-help groups, and financial support for rural women.
@@ -78,15 +78,15 @@ const Home = () => {
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-green-500 mb-12">Our Impact</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="p-6 border-l-4 border-green-500 bg-gray-950 rounded">
+            <div className="p-6 border-l-4 border-green-500 bg-gray-950 rounded hover:shadow-md hover:shadow-green-400/20 transition">
               <h3 className="text-4xl font-bold text-green-400">10K+</h3>
               <p className="mt-2 text-gray-300">Children Educated</p>
             </div>
-            <div className="p-6 border-l-4 border-green-500 bg-gray-950 rounded">
+            <div className="p-6 border-l-4 border-green-500 bg-gray-950 rounded hover:shadow-md hover:shadow-green-400/20 transition">
               <h3 className="text-4xl font-bold text-green-400">500+</h3>
               <p className="mt-2 text-gray-300">Health Camps Conducted</p>
             </div>
-            <div className="p-6 border-l-4 border-green-500 bg-gray-950 rounded">
+            <div className="p-6 border-l-4 border-green-500 bg-gray-950 rounded hover:shadow-md hover:shadow-green-400/20 transition">
               <h3 className="text-4xl font-bold text-green-400">1,000+</h3>
               <p className="mt-2 text-gray-300">Women Trained</p>
             </div>
