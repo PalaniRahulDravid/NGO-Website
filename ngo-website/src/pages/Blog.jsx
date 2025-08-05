@@ -42,6 +42,15 @@ function Blog() {
             </div>
           ))}
         </div>
+        {/* Events Link */}
+        <div className="mt-12 text-center">
+          <a
+            href="/events"
+            className="inline-block bg-green-500 text-white font-semibold px-6 py-3 rounded-md shadow hover:bg-green-600 transition"
+          >
+            View Upcoming Events
+          </a>
+        </div>
       </div>
     </div>
   );
