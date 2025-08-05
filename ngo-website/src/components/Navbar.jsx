@@ -1,9 +1,24 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  const navLinks = [
+    { path: "/", label: "Home" },
+    { path: "/about", label: "About Us" },
+    { path: "/volunteer", label: "Volunteer" },
+    { path: "/donate", label: "Donate" },
+    { path: "/contact", label: "Contact Us" },
+  ];
+
+  const getLinkClass = (path) => {
+    return location.pathname === path
+      ? "text-green-400 font-semibold"
+      : "text-white hover:text-green-400 transition duration-300";
+  };
 
   return (
     <nav className="bg-black text-white shadow-md sticky top-0 z-50">
@@ -22,22 +37,31 @@ function Navbar() {
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-6">
-          <Link to="/" className="hover:text-green-400 transition duration-300">Home</Link>
-          <Link to="/about" className="hover:text-green-400 transition duration-300">About Us</Link>
-          <Link to="/volunteer" className="hover:text-green-400 transition duration-300">Volunteer</Link>
-          <Link to="/donate" className="hover:text-green-400 transition duration-300">Donate</Link>
-          <Link to="/contact" className="hover:text-green-400 transition duration-300">Contact Us</Link>
+          {navLinks.map((link) => (
+            <Link
+              key={link.path}
+              to={link.path}
+              className={getLinkClass(link.path)}
+            >
+              {link.label}
+            </Link>
+          ))}
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden px-4 pb-4 space-y-2 bg-black">
-          <Link to="/" onClick={() => setIsOpen(false)} className="block hover:text-green-400">Home</Link>
-          <Link to="/about" onClick={() => setIsOpen(false)} className="block hover:text-green-400">About Us</Link>
-          <Link to="/volunteer" onClick={() => setIsOpen(false)} className="block hover:text-green-400">Volunteer</Link>
-          <Link to="/donate" onClick={() => setIsOpen(false)} className="block hover:text-green-400">Donate</Link>
-          <Link to="/contact" onClick={() => setIsOpen(false)} className="block hover:text-green-400">Contact Us</Link>
+          {navLinks.map((link) => (
+            <Link
+              key={link.path}
+              to={link.path}
+              onClick={() => setIsOpen(false)}
+              className={`${getLinkClass(link.path)} block`}
+            >
+              {link.label}
+            </Link>
+          ))}
         </div>
       )}
     </nav>

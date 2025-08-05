@@ -8,7 +8,8 @@ const Home = () => {
       <section
         className="h-screen bg-cover bg-center flex flex-col justify-center items-center text-center px-6 relative"
         style={{
-          backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(${heroImg})`,
+          backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://cdn.pixabay.com/photo/2016/07/29/03/40/volunteer-1550328_1280.jpg")`,
+          backgroundPosition: "center 70%",
         }}
       >
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight max-w-3xl text-white">
@@ -69,6 +70,21 @@ const Home = () => {
                 Skill training, self-help groups, and financial support for rural women.
               </p>
             </div>
+          </div>
+          {/* Gallery and Projects Links */}
+          <div className="text-center mt-10">
+            <a
+              href="/projects"
+              className="inline-block bg-green-500 text-white font-semibold px-6 py-3 rounded-md shadow hover:bg-green-600 transition mr-4"
+            >
+              View Our Projects
+            </a>
+            <a
+              href="/gallery"
+              className="inline-block bg-green-500 text-white font-semibold px-6 py-3 rounded-md shadow hover:bg-green-600 transition"
+            >
+              View Gallery
+            </a>
           </div>
         </div>
       </section>

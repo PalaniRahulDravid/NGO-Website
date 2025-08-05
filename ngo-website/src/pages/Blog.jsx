@@ -51,6 +51,21 @@ function Blog() {
             View Upcoming Events
           </a>
         </div>
+        {/* Gallery and Projects Links */}
+        <div className="mt-6 text-center">
+          <a
+            href="/projects"
+            className="inline-block bg-green-500 text-white font-semibold px-6 py-3 rounded-md shadow hover:bg-green-600 transition mr-4"
+          >
+            Our Projects
+          </a>
+          <a
+            href="/gallery"
+            className="inline-block bg-green-500 text-white font-semibold px-6 py-3 rounded-md shadow hover:bg-green-600 transition"
+          >
+            Gallery
+          </a>
+        </div>
       </div>
     </div>
   );
